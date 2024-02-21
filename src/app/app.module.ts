@@ -10,6 +10,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { JeweleryComponent } from './pages/jewelery/jewelery.component';
 import { CardProductComponent } from './components/card-product/card-product.component';
 import { SpinnerComponent } from './components/spinner/spinner.component';
+import { ProductdetailComponent } from './pages/productdetail/productdetail.component';
+import { CardprodutdetailComponent } from './components/cardprodutdetail/cardprodutdetail.component';
+import { ProductdetailtabsComponent } from './components/productdetailtabs/productdetailtabs.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
     NavbarComponent,
     JeweleryComponent,
     CardProductComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    ProductdetailComponent,
+    CardprodutdetailComponent,
+    ProductdetailtabsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,6 @@
+<div *ngIf="detailProduct$ | async as product; else loader" class="container border  mt-5">
+    <app-cardprodutdetail [product]="product"></app-cardprodutdetail>
+</div>
+<ng-template #loader>
+    <app-spinner></app-spinner>
+  </ng-template>

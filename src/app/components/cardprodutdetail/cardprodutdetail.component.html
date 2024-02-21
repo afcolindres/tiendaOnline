@@ -1,0 +1,54 @@
+<section class="py-5">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-lg-6">
+                <!-- PRODUCT SLIDER-->
+                <div class="row m-sm-0">
+
+                    <div class="col-sm-10 order-1 order-sm-2">
+                        <div class="swiper product-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide " style="text-align: center; align-items: center;"><a class="glightbox product-view " [href]="product.image" >
+                                        <img class="img-fluid height-img" [src]="product.image"  alt="..."></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- PRODUCT DETAILS-->
+            <div class="col-lg-6">
+
+                <ul class="list-inline mb-2 text-sm">
+                    <li class="list-inline-item m-1" *ngFor="let loop of numberReturn();let i= index"><i
+                            class="fas fa-star small text-warning"></i></li>
+                </ul>
+                <h1 style="font-size: 2rem !important;">{{product.title}}</h1>
+                <ul class="list-unstyled small d-inline-block">
+                    <li class="mb-1 bg-white"><span class="text-muted font-size-s">Código de producto:
+                            {{product.id}}</span></li>
+                </ul>
+                <p class="text-muted lead precio">L {{product.price}}</p>
+                <p class="text-sm mb-4" style="color: #ff6a1b;">precios incluyen descuento e impuestos</p>
+                <div class="row align-items-stretch mb-4 w-100">
+                    <div class="col-sm-5 pr-sm-0 w-100">
+                        <button type="button" class="btn btn-primary w-100">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="vtex-flex-layout-0-x-flexColChild vtex-flex-layout-0-x-flexColChild--product--details--container pb0"
+                    style="height:auto">
+                    <div class="vtex-store-components-3-x-shareContainer db">
+                        
+                        <div class="vtex-store-components-3-x-shareButtons flex flex-row">
+                            <span class="text-muted font-size-icon">Compartir en:</span>
+                            <button type="button" class="btn btn-light"><i class="fa-brands fa-facebook" style="color:rgb(59, 89, 152); font-size: 1.5rem;"></i></button>
+                            <button type="button" class="btn btn-light"><i class="fa-brands fa-whatsapp" style="color: rgb(37, 211, 102); font-size: 1.5rem;"></i></button>
+                            <button type="button" class="btn btn-light"><i class="fa-brands fa-twitter" style="color: rgb(0, 172, 237); font-size: 1.5rem;"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <app-productdetailtabs [product]="product"></app-productdetailtabs>
+    </div>
+</section>

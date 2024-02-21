@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-card-product',
@@ -8,4 +9,10 @@ import { Component, Input } from '@angular/core';
 export class CardProductComponent {
   @Input() product: any = [];
 
+  constructor(private readonly router: Router){}
+
+  goDetalle(id: number){
+    this.router.navigate(['productdetail',id])
+  }
+  
 }

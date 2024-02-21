@@ -1,0 +1,19 @@
+.list-inline {
+    padding-left: 0;
+    list-style: none;
+}
+
+.font-size-s{
+    font-size: 0.65rem !important;
+}
+
+.font-size-icon{
+    font-size: 1rem !important;
+}
+
+
+.precio{
+    color: #ff6a1b !important;
+    font-size: 28px;
+    font-weight: 700;
+}

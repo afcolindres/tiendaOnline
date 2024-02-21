@@ -17,8 +17,8 @@ export class ProductsService {
     return this.http.get<Product[]>(`https://fakestoreapi.com/products/category/${categoria}`);
   }
 
-  GetDetalleProducto(idProducto: BigInteger){
-    return this.http.get(`https://fakestoreapi.com/products/${idProducto}`);
+  GetDetalleProducto(idProducto: Number): Observable<Product>{
+    return this.http.get<Product>(`https://fakestoreapi.com/products/${idProducto}`);
   }
 
 }
